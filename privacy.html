@@ -41,6 +41,11 @@
     .privacy-container a:hover {
       color: #ffca28;
     }
+    body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
   </style>
 </head>
 
@@ -968,11 +973,15 @@
 
       // === Hamburger Toggle ===
       navToggle?.addEventListener('click', function (e) {
-        e.stopPropagation();
-        if (isMobile() && navMenu) {
-          navMenu.classList.toggle('active');
-        }
-      });
+  e.stopPropagation();
+  if (isMobile() && navMenu) {
+    const isActive = navMenu.classList.toggle('active');
+
+    // Toggle no-scroll on body
+    document.body.classList.toggle('no-scroll', isActive);
+  }
+});
+
 
       // === Dropdown Toggle on Click (Mobile) and Hover (Desktop)
       document.querySelectorAll('.dropdown').forEach(dropdown => {

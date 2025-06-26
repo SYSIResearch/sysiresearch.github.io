@@ -166,6 +166,11 @@
         height: auto !important;
       }
     }
+    body.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
   </style>
 </head>
 
@@ -782,8 +787,17 @@
       });
       // Hamburger toggle for mobile
       document.getElementById('navToggle')?.addEventListener('click', function () {
-        document.querySelector('.nav ul')?.classList.toggle('active');
-      });
+  const navList = document.querySelector('.nav ul');
+  navList?.classList.toggle('active');
+
+  // Lock scroll when menu is active on mobile/tablet
+  if (navList?.classList.contains('active')) {
+    document.body.classList.add('no-scroll');
+  } else {
+    document.body.classList.remove('no-scroll');
+  }
+});
+
 
       const isMobile = window.innerWidth <= 1024;
 

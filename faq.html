@@ -9,6 +9,13 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+  </style>
 </head>
 
 <body>
@@ -840,8 +847,17 @@
       });
       // Hamburger toggle for mobile
       document.getElementById('navToggle')?.addEventListener('click', function () {
-        document.querySelector('.nav ul')?.classList.toggle('active');
-      });
+  const navList = document.querySelector('.nav ul');
+  navList?.classList.toggle('active');
+
+  // Lock scroll when menu is active on mobile/tablet
+  if (navList?.classList.contains('active')) {
+    document.body.classList.add('no-scroll');
+  } else {
+    document.body.classList.remove('no-scroll');
+  }
+});
+
       const isMobile = window.innerWidth <= 1024;
 
       if (isMobile) {

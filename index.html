@@ -868,8 +868,19 @@
         }
       });
       document.getElementById('navToggle').addEventListener('click', function () {
-        document.querySelector('.nav ul').classList.toggle('active');
-      });
+  const navMenu = document.querySelector('.nav ul');
+  navMenu.classList.toggle('active');
+
+  // Prevent background scrolling on mobile/tablet when nav is open
+  if (window.innerWidth <= 1024) {
+    if (navMenu.classList.contains('active')) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
+});
+
       document.addEventListener('DOMContentLoaded', () => {
         const isMobile = window.innerWidth <= 1024;
 
