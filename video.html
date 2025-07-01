@@ -2,181 +2,182 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
 
-    <title>Research Videos | SYSI</title>
-    <style>
-        .video-section {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-bottom: 60px;
-            background-color: #417298;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
+  <title>Research Videos | SYSI</title>
+  <style>
+    .video-section {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+      background-color: #417298;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-        .video-section.reverse {
-            flex-direction: row-reverse;
-        }
+    .video-section.reverse {
+      flex-direction: row-reverse;
+    }
 
-        .description {
-            flex: 1;
-            padding: 20px;
-            min-width: 300px;
-        }
+    .description {
+      flex: 1;
+      padding: 20px;
+      min-width: 300px;
+    }
 
-        .description h2 {
-            font-size: 2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+    .description h2 {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
-        .underline {
-            height: 4px;
-            width: 50px;
-            margin-bottom: 20px;
-        }
+    .underline {
+      height: 4px;
+      width: 50px;
+      margin-bottom: 20px;
+    }
 
-        .description p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-        
+    .description p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
 
-        .video-container {
-            flex: 1;
-            min-width: 300px;
-            padding: 20px;
-        }
 
-        .video-container iframe {
-            width: 100%;
-            height: 315px;
-            border: none;
-        }
+    .video-container {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
 
-        @media (max-width: 768px) {
+    .video-container iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
 
-            .video-section,
-            .video-section.reverse {
-                flex-direction: column;
-            }
-        }
-        body.no-scroll {
-  overflow: hidden;
-  height: 100%;
-}
+    @media (max-width: 768px) {
 
-    </style>
+      .video-section,
+      .video-section.reverse {
+        flex-direction: column;
+      }
+    }
+
+    body.no-scroll {
+      overflow: hidden;
+      height: 100%;
+    }
+  </style>
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="index.html"><img src="logo final 2.png" alt="SYSI Logo" /></a>
-        </div>
-        <div class="container">
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="logo final 2.png" alt="SYSI Logo" /></a>
+    </div>
+    <div class="container">
       <div class="nav-toggle" id="navToggle">
         <span></span><span></span><span></span>
       </div> <!-- ✅ wrap nav inside container -->
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#about" class="dropdown-toggle">About</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="sysi.html">SYSI</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="news.html">News</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#about" class="dropdown-toggle">Specifications</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="under-development.html">Under Development</a></li>
-                            <li><a href="contribute.html">Contribute</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#industries" class="dropdown-toggle">Industries</a>
-                        <ul class="dropdown-menu industries-dropdown">
-                            <li>
-                                <div class="industries-grid three-columns">
-                                    <div class="industry-group">
-                                        <h4 class="tech-heading">TECHNOLOGIES</h4>
-                                        <div class="tech-columns">
-                                            <div class="industry-column">
-                                                <a href="quantum.html">Quantum Computing</a>
-                                                <a href="ai.html">Artificial Intelligence</a>
-                                                <a href="neuro.html">Neurotechnology</a>
-                                                <a href="embedded.html">Embedded System</a>
-                                                <a href="software.html">Software Development</a>
-                                                <a href="space.html">Space Technology</a>
-                                            </div>
-                                            <div class="industry-column">
-                                                <a href="biotech.html">Bio Technology</a>
-                                                <a href="renew.html">Renewable Energy</a>
-                                                <a href="nanotechnology.html">Nano Technology</a>
-                                                <a href="cybersecurity.html">Cyber Security</a>
-                                                <a href="synthetic-biology.html">Synthetic Biology</a>
-                                                <a href="advanced-material.html">Advanced Material</a>
-                                            </div>
-                                        </div>
-                                    </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#about" class="dropdown-toggle">About</a>
+            <ul class="dropdown-menu">
+              <li><a href="sysi.html">SYSI</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="news.html">News</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#about" class="dropdown-toggle">Specifications</a>
+            <ul class="dropdown-menu">
+              <li><a href="under-development.html">Under Development</a></li>
+              <li><a href="contribute.html">Contribute</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#industries" class="dropdown-toggle">Industries</a>
+            <ul class="dropdown-menu industries-dropdown">
+              <li>
+                <div class="industries-grid three-columns">
+                  <div class="industry-group">
+                    <h4 class="tech-heading">TECHNOLOGIES</h4>
+                    <div class="tech-columns">
+                      <div class="industry-column">
+                        <a href="quantum.html">Quantum Computing</a>
+                        <a href="ai.html">Artificial Intelligence</a>
+                        <a href="neuro.html">Neurotechnology</a>
+                        <a href="embedded.html">Embedded System</a>
+                        <a href="software.html">Software Development</a>
+                        <a href="space.html">Space Technology</a>
+                      </div>
+                      <div class="industry-column">
+                        <a href="biotech.html">Bio Technology</a>
+                        <a href="renew.html">Renewable Energy</a>
+                        <a href="nanotechnology.html">Nano Technology</a>
+                        <a href="cybersecurity.html">Cyber Security</a>
+                        <a href="synthetic-biology.html">Synthetic Biology</a>
+                        <a href="advanced-material.html">Advanced Material</a>
+                      </div>
+                    </div>
+                  </div>
 
-                                    <div class="industry-column">
-                                        <h4>APPLICATIONS</h4>
-                                        <a href="semiconductor.html">Semiconductors</a>
-                                        <a href="arvr.html">AR VR</a>
-                                        <a href="robotics.html">Robotics</a>
-                                        <a href="autonomous-vehicle.html">Autonomous Vehicle</a>
-                                        <a href="iot.html">IoT</a>
-                                    </div>
-                                </div>
+                  <div class="industry-column">
+                    <h4>APPLICATIONS</h4>
+                    <a href="semiconductor.html">Semiconductors</a>
+                    <a href="arvr.html">AR VR</a>
+                    <a href="robotics.html">Robotics</a>
+                    <a href="autonomous-vehicle.html">Autonomous Vehicle</a>
+                    <a href="iot.html">IoT</a>
+                  </div>
+                </div>
 
 
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#about" class="dropdown-toggle">Community</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="community-events.html"> Community Events</a></li>
-                            <li><a href="calendar.html"> Calendar</a></li>
-                            <li><a href="video.html"> Videos</a></li>
-                            <li><a href="meeting-calendar.html"> Meeting Calendar</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#about" class="dropdown-toggle">Members</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="member.html">Current Members</a></li>
-                            <li><a href="join.html">Join</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="join.html" class="btn btn-primary btn-join">Join</a></li>
-                    <li class="social-icons">
-          <a href="https://www.linkedin.com/company/sysi-research-foundation/ " target="_blank" title="LinkedIn">
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#about" class="dropdown-toggle">Community</a>
+            <ul class="dropdown-menu">
+              <li><a href="community-events.html"> Community Events</a></li>
+              <li><a href="calendar.html"> Calendar</a></li>
+              <li><a href="video.html"> Videos</a></li>
+              <li><a href="meeting-calendar.html"> Meeting Calendar</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#about" class="dropdown-toggle">Members</a>
+            <ul class="dropdown-menu">
+              <li><a href="member.html">Current Members</a></li>
+              <li><a href="join.html">Join</a></li>
+            </ul>
+          </li>
+          <li><a href="join.html" class="btn btn-primary btn-join">Join</a></li>
+          <li class="social-icons">
+            <a href="https://www.linkedin.com/company/sysi-research-foundation/ " target="_blank" title="LinkedIn">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6C1.11 6 0 4.88 0 3.5C0 2.12 1.11 1 2.49 1C3.87 1 4.98 2.12 4.98 3.5ZM.5 8H4.5V24H.5V8ZM8.5 8H12.3V10.06H12.36C12.91 9.09 14.28 8.06 16.28 8.06C20.4 8.06 21 10.63 21 14.1V24H17V14.84C17 13.07 16.96 10.86 14.61 10.86C12.23 10.86 11.9 12.8 11.9 14.7V24H8V8H8.5Z" />
               </svg>
             </a>
-            <a href="https://youtube.com/@rusttechxsummit?feature=shared" target="_blank" title="YouTube">
+            <a href="https://www.youtube.com/@RustPlanet" target="_blank" title="YouTube">
               <svg width="28" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M23.498 6.186a2.994 2.994 0 0 0-2.112-2.12C19.595 3.5 12 3.5 12 3.5s-7.595 0-9.386.566a2.994 2.994 0 0 0-2.112 2.12A29.91 29.91 0 0 0 0 12a29.91 29.91 0 0 0 .502 5.814 2.994 2.994 0 0 0 2.112 2.12C4.405 20.5 12 20.5 12 20.5s7.595 0 9.386-.566a2.994 2.994 0 0 0 2.112-2.12A29.91 29.91 0 0 0 24 12a29.91 29.91 0 0 0-.502-5.814zM9.75 15.5v-7l6 3.5-6 3.5z" />
               </svg>
             </a>
             <a href="https://matrix.to/#/%23sysi-research:matrix.org" target="_blank" title="Matrix">
-  <svg width="26" height="26" viewBox="0 0 256 256" fill="white" xmlns="http://www.w3.org/2000/svg">
-    <path d="M48 32h160a16 16 0 0 1 16 16v160a16 16 0 0 1-16 16H48a16 16 0 0 1-16-16V48a16 16 0 0 1 16-16zm16 24v144h128V56H64zm32 32h16v80H96V88zm48 0h16v80h-16V88z"/>
-  </svg>
-</a>
+              <svg width="26" height="26" viewBox="0 0 256 256" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M48 32h160a16 16 0 0 1 16 16v160a16 16 0 0 1-16 16H48a16 16 0 0 1-16-16V48a16 16 0 0 1 16-16zm16 24v144h128V56H64zm32 32h16v80H96V88zm48 0h16v80h-16V88z" />
+              </svg>
+            </a>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@sysiresearch.org" title="Email">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -190,13 +191,13 @@
               </svg>
             </a>
           </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
 
-    <!-- Add this right after header -->
+  <!-- Add this right after header -->
   <div id="searchOverlay" class="search-overlay">
     <div class="search-content">
       <span class="close-search">&times;</span>
@@ -208,7 +209,7 @@
     </div>
   </div>
 
-    <div id="searchOverlay" class="search-overlay">
+  <div id="searchOverlay" class="search-overlay">
     <div class="search-content">
       <span class="close-search">&times;</span>
       <h2>Search SYSI</h2>
@@ -219,252 +220,261 @@
     </div>
   </div>
 
-    <!-- Video Section 1: Description Left, Video Right -->
-    <section class="video-section">
-        <div class="description">
-            <h2>Exploring Cranelift and RISC-V at RustTechX Summit</h2>
-            <div class="underline"></div>
-            <p class="description-text">
-                Join Nihal Pasham at RustTechX Summit as he dives into the world of Rust-based compiler design with his talk on "Compilers in Rust: Cranelift". This session highlights efforts to add RISC-V 32-bit backend support to Cranelift, a fast and efficient code generator. Learn how Rust empowers high-performance compilation while expanding Cranelift’s role in the embedded systems landscape. Ideal for those
-                passionate about low-level programming, compiler internals, and the growing RISC-V ecosystem.
-            </p>
-        </div>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/lrkQoNpEiwI" title="What is Semiconductor?"
-                allowfullscreen></iframe>
-        </div>
-    </section>
+  <!-- Video Section 1: Description Left, Video Right -->
+  <section class="video-section">
+    <div class="description">
+      <h2>Unlocking Embedded Innovations with RISC-V at RustTechX Summit</h2>
+      <div class="underline"></div>
+      <p class="description-text">
+        Dive into the forefront of embedded systems at RustTechX Summit with this insightful session on advancing RISC-V
+        architecture using Rust. This talk sheds light on how Rust is shaping the future of low-level development and
+        driving innovations in the open hardware movement. Perfect for enthusiasts of embedded systems, open ISAs, and
+        those eager to explore how Rust powers real-world hardware solutions.
+      </p>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/faZpLrEuZlU" title="RISC-V with Rust – RustTechX Summit"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
 
-    <!-- Video Section 2: Description Right, Video Left -->
-    <section class="video-section reverse">
-        <div class="description">
-            <h2>Harnessing Rust and GStreamer for Next-Gen Multimedia Pipelines</h2>
-            <div class="underline"></div>
-            <p>
-                In this insightful session, Sanchayan Maity from asymptotic.io explores the synergy between Rust and
-                GStreamer for crafting high-performance multimedia workflows. From live streaming and video conferencing
-                to editing and playback, he demonstrates how these technologies simplify complex media processing. The
-                talk highlights GStreamer's versatility and Rust’s advantages in safety, speed, and concurrency.
-                Attendees gain a clear roadmap for building scalable and efficient media applications.
-            </p>
-        </div>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/_6J3gvK7N9Y" title="AI-Powered Autonomous Vehicles"
-                allowfullscreen></iframe>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-columns footer-top-section">
-                <div class="footer-column subscribe-section">
-                    <h3>Subscribe for Updates</h3>
-                    
-                    <form id="subscribeForm">
-                        <input type="text" name="firstName" placeholder="First Name*" required>
-                        <input type="text" name="lastName" placeholder="Last Name*" required>
-                        <input type="email" name="email" placeholder="Email*" required>
-                        <select name="country" required>
-                            <option value="" disabled selected>Country*</option>
-                            <option value="australia">Australia</option>
-                            <option value="austria">Austria</option>
-                            <option value="belgium">Belgium</option>
-                            <option value="brazil">Brazil</option>
-                            <option value="canada">Canada</option>
-                            <option value="china">China</option>
-                            <option value="czech-republic">Czech Republic</option>
-                            <option value="denmark">Denmark</option>
-                            <option value="estonia">Estonia</option>
-                            <option value="finland">Finland</option>
-                            <option value="france">France</option>
-                            <option value="germany">Germany</option>
-                            <option value="hong-kong">Hong Kong</option>
-                            <option value="hungary">Hungary</option>
-                            <option value="india">India</option>
-                            <option value="indonesia">Indonesia</option>
-                            <option value="ireland">Ireland</option>
-                            <option value="israel">Israel</option>
-                            <option value="italy">Italy</option>
-                            <option value="japan">Japan</option>
-                            <option value="south-korea">South Korea</option>
-                            <option value="latvia">Latvia</option>
-                            <option value="lithuania">Lithuania</option>
-                            <option value="luxembourg">Luxembourg</option>
-                            <option value="malaysia">Malaysia</option>
-                            <option value="mexico">Mexico</option>
-                            <option value="netherlands">Netherlands</option>
-                            <option value="new-zealand">New Zealand</option>
-                            <option value="norway">Norway</option>
-                            <option value="poland">Poland</option>
-                            <option value="portugal">Portugal</option>
-                            <option value="russia">Russia</option>
-                            <option value="saudi-arabia">Saudi Arabia</option>
-                            <option value="singapore">Singapore</option>
-                            <option value="slovenia">Slovenia</option>
-                            <option value="spain">Spain</option>
-                            <option value="sweden">Sweden</option>
-                            <option value="switzerland">Switzerland</option>
-                            <option value="taiwan">Taiwan</option>
-                            <option value="uae">United Arab Emirates</option>
-                            <option value="uk">United Kingdom</option>
-                            <option value="usa">United States</option>
-                            <option value="vietnam">Vietnam</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <div class="checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="subscriptionTypes" value="Technical">
-                                <span>Technical</span>
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="subscriptionTypes" value="Marketing">
-                                <span>Marketing</span>
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="subscriptionTypes" value="Education">
-                                <span>Education</span>
-                            </label>
-                        </div>
-                        <button type="submit">Submit</button>
-                    </form>
-                    <div id="subscribeSuccessMsg" class="subscribe-success" style="display:none;">
-                        <h4>🎉 Congratulations! You are subscribed.</h4>
-                        <p>You're now part of a future-focused community shaping tomorrow's innovations at SYSI.</p>
-                        <button onclick="document.getElementById('subscribeSuccessMsg').style.display='none'"
-                            class="ok-btn">Okay</button>
-                    </div>
-                </div>
-                <div class="footer-column join-section">
-                    <h3>Join SYSI</h3>
-                    <p>Become part of a global community driving innovation in cutting-edge technologies. Collaborate,
-                        contribute, and shape the future with SYSI Research Foundation.</p>
-                    <a href="join.html" class="btn btn-primary btn-join">Join Now</a>
-                </div>
+
+  <!-- Video Section 2: Description Right, Video Left -->
+  <section class="video-section reverse">
+    <div class="description">
+      <h2>Building Reliable Systems with Rust at Scale</h2>
+      <div class="underline"></div>
+      <p>
+        In this engaging talk, Abhishek Bhattacharjee shares real-world experiences of scaling production systems using
+        Rust.
+        The session focuses on how Rust’s powerful type system, memory safety, and performance features can be leveraged
+        to build robust and maintainable backend infrastructure. Perfect for developers interested in building scalable
+        services, improving reliability, and adopting Rust in real-world deployments.
+      </p>
+    </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/sX8ECgIBJck" title="Building Reliable Systems with Rust"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-columns footer-top-section">
+        <div class="footer-column subscribe-section">
+          <h3>Subscribe for Updates</h3>
+
+          <form id="subscribeForm">
+            <input type="text" name="firstName" placeholder="First Name*" required>
+            <input type="text" name="lastName" placeholder="Last Name*" required>
+            <input type="email" name="email" placeholder="Email*" required>
+            <select name="country" required>
+              <option value="" disabled selected>Country*</option>
+              <option value="australia">Australia</option>
+              <option value="austria">Austria</option>
+              <option value="belgium">Belgium</option>
+              <option value="brazil">Brazil</option>
+              <option value="canada">Canada</option>
+              <option value="china">China</option>
+              <option value="czech-republic">Czech Republic</option>
+              <option value="denmark">Denmark</option>
+              <option value="estonia">Estonia</option>
+              <option value="finland">Finland</option>
+              <option value="france">France</option>
+              <option value="germany">Germany</option>
+              <option value="hong-kong">Hong Kong</option>
+              <option value="hungary">Hungary</option>
+              <option value="india">India</option>
+              <option value="indonesia">Indonesia</option>
+              <option value="ireland">Ireland</option>
+              <option value="israel">Israel</option>
+              <option value="italy">Italy</option>
+              <option value="japan">Japan</option>
+              <option value="south-korea">South Korea</option>
+              <option value="latvia">Latvia</option>
+              <option value="lithuania">Lithuania</option>
+              <option value="luxembourg">Luxembourg</option>
+              <option value="malaysia">Malaysia</option>
+              <option value="mexico">Mexico</option>
+              <option value="netherlands">Netherlands</option>
+              <option value="new-zealand">New Zealand</option>
+              <option value="norway">Norway</option>
+              <option value="poland">Poland</option>
+              <option value="portugal">Portugal</option>
+              <option value="russia">Russia</option>
+              <option value="saudi-arabia">Saudi Arabia</option>
+              <option value="singapore">Singapore</option>
+              <option value="slovenia">Slovenia</option>
+              <option value="spain">Spain</option>
+              <option value="sweden">Sweden</option>
+              <option value="switzerland">Switzerland</option>
+              <option value="taiwan">Taiwan</option>
+              <option value="uae">United Arab Emirates</option>
+              <option value="uk">United Kingdom</option>
+              <option value="usa">United States</option>
+              <option value="vietnam">Vietnam</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="subscriptionTypes" value="Technical">
+                <span>Technical</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="subscriptionTypes" value="Marketing">
+                <span>Marketing</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="subscriptionTypes" value="Education">
+                <span>Education</span>
+              </label>
             </div>
+            <button type="submit">Submit</button>
+          </form>
+          <div id="subscribeSuccessMsg" class="subscribe-success" style="display:none;">
+            <h4>🎉 Congratulations! You are subscribed.</h4>
+            <p>You're now part of a future-focused community shaping tomorrow's innovations at SYSI.</p>
+            <button onclick="document.getElementById('subscribeSuccessMsg').style.display='none'"
+              class="ok-btn">Okay</button>
+          </div>
+        </div>
+        <div class="footer-column join-section">
+          <h3>Join SYSI</h3>
+          <p>Become part of a global community driving innovation in cutting-edge technologies. Collaborate,
+            contribute, and shape the future with SYSI Research Foundation.</p>
+          <a href="join.html" class="btn btn-primary btn-join">Join Now</a>
+        </div>
+      </div>
 
-            <div class="container">
-                <div class="footer-columns">
-                    <div class="footer-column">
-                        <h3>ABOUT</h3>
-                        <ul>
-                            <li><a href="sysi.html">SYSI</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <br>
-                            <h3>MEMBERS</h3>
-                            <ul>
-                                <li><a href="member.html">Current Members</a></li>
-                                <li><a href="join.html">Join</a></li>
-                            </ul>
-                            <br>
-                            <h3>POLICIES</h3>
-                            <ul>
-                                <li><a href="privacy.html">Privacy Policy</a></li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>SPECIFICATION</h3>
-                        <ul>
-                            <li><a href="under-development.html">Under Development</a></li>
-                            <li><a href="contribute.html">Contribute</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>TECHNOLOGIES</h3>
-                        <ul>
-                            <li><a href="quantum.html">Quantum Computing</a></li>
-                            <li><a href="ai.html">Artificial Intelligence</a></li>
-                            <li><a href="neuro.html">Neurotechnology</a></li>
-                            <li><a href="embedded.html">Embedded System</a></li>
-                            <li><a href="software.html">Software Development</a></li>
-                            <li><a href="space.html">Space Technology</a></li>
-                            <li><a href="biotech.html">Bio Technology</a></li>
-                            <li><a href="renew.html">Renewable Energy</a></li>
-                            <li><a href="nanotechnology.html">Nano Technology</a></li>
-                            <li><a href="cybersecurity.html">Cyber Security</a></li>
-                            <li><a href="synthetic-biology.html">Synthetic Biology</a></li>
-                            <li><a href="advanced-material.html">Advanced Material</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>APPLICATIONS</h3>
-                        <ul>
-                            <li><a href="semiconductor.html">Semiconductors</a></li>
-                            <li><a href="arvr.html">AR VR</a></li>
-                            <li><a href="robotics.html">Robotics</a></li>
-                            <li><a href="autonomous-vehicle.html">Autonomous Vehicle</a></li>
-                            <li><a href="iot.html">IoT</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>COMMUNITY</h3>
-                        <ul>
-                            <li><a href="community-events.html">Community Events</a></li>
-                            <li><a href="calendar.html">Calendar</a></li>
-                            <li><a href="video.html">Videos</a></li>
-                            <li><a href="meeting-calendar.html">Meeting Calendar</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p class="privacy-notice">
-                        By submitting this form you are consenting to receive marketing emails about news, events, and
-                        training from
-                        SYSI.
-                        You can unsubscribe at any time by following the “Subscription Center” link included within such
-                        communications.
-                        For information on our privacy practices and commitment to protecting your privacy, please
-                        review our
-                        <a href="#">Privacy Policy</a>. We do not sell your contact information to third parties.
-                    </p>
-                    <p class="footer-text">© 2025 SYSI Research Foundation. All rights reserved.</p>
-                </div>
-            </div>
-            <style>
-                .footer-columns {
-                    display: grid;
-                    grid-template-columns: repeat(5, 1fr);
-                    gap: 40px;
-                }
+      <div class="container">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>ABOUT</h3>
+            <ul>
+              <li><a href="sysi.html">SYSI</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="news.html">News</a></li>
+              <br>
+              <h3>MEMBERS</h3>
+              <ul>
+                <li><a href="member.html">Current Members</a></li>
+                <li><a href="join.html">Join</a></li>
+              </ul>
+              <br>
+              <h3>POLICIES</h3>
+              <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>SPECIFICATION</h3>
+            <ul>
+              <li><a href="under-development.html">Under Development</a></li>
+              <li><a href="contribute.html">Contribute</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>TECHNOLOGIES</h3>
+            <ul>
+              <li><a href="quantum.html">Quantum Computing</a></li>
+              <li><a href="ai.html">Artificial Intelligence</a></li>
+              <li><a href="neuro.html">Neurotechnology</a></li>
+              <li><a href="embedded.html">Embedded System</a></li>
+              <li><a href="software.html">Software Development</a></li>
+              <li><a href="space.html">Space Technology</a></li>
+              <li><a href="biotech.html">Bio Technology</a></li>
+              <li><a href="renew.html">Renewable Energy</a></li>
+              <li><a href="nanotechnology.html">Nano Technology</a></li>
+              <li><a href="cybersecurity.html">Cyber Security</a></li>
+              <li><a href="synthetic-biology.html">Synthetic Biology</a></li>
+              <li><a href="advanced-material.html">Advanced Material</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>APPLICATIONS</h3>
+            <ul>
+              <li><a href="semiconductor.html">Semiconductors</a></li>
+              <li><a href="arvr.html">AR VR</a></li>
+              <li><a href="robotics.html">Robotics</a></li>
+              <li><a href="autonomous-vehicle.html">Autonomous Vehicle</a></li>
+              <li><a href="iot.html">IoT</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>COMMUNITY</h3>
+            <ul>
+              <li><a href="community-events.html">Community Events</a></li>
+              <li><a href="calendar.html">Calendar</a></li>
+              <li><a href="video.html">Videos</a></li>
+              <li><a href="meeting-calendar.html">Meeting Calendar</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="privacy-notice">
+            By submitting this form you are consenting to receive marketing emails about news, events, and
+            training from
+            SYSI.
+            You can unsubscribe at any time by following the “Subscription Center” link included within such
+            communications.
+            For information on our privacy practices and commitment to protecting your privacy, please
+            review our
+            <a href="#">Privacy Policy</a>. We do not sell your contact information to third parties.
+          </p>
+          <p class="footer-text">© 2025 SYSI Research Foundation. All rights reserved.</p>
+        </div>
+      </div>
+      <style>
+        .footer-columns {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 40px;
+        }
 
-                .footer-top-section {
-                    grid-template-columns: 1fr 1fr;
-                    margin-bottom: 40px;
-                }
+        .footer-top-section {
+          grid-template-columns: 1fr 1fr;
+          margin-bottom: 40px;
+        }
 
-                .footer-column h3 {
-                    color: #00aaff;
-                    border-bottom: 2px solid #ffca28;
-                    display: inline-block;
-                    margin-bottom: 10px;
-                }
+        .footer-column h3 {
+          color: #00aaff;
+          border-bottom: 2px solid #ffca28;
+          display: inline-block;
+          margin-bottom: 10px;
+        }
 
-                .footer-column ul li a {
-                    color: #ccc;
-                    text-decoration: none;
-                }
+        .footer-column ul li a {
+          color: #ccc;
+          text-decoration: none;
+        }
 
-                .footer-column ul li a:hover {
-                    color: #ffca28;
-                }
+        .footer-column ul li a:hover {
+          color: #ffca28;
+        }
 
-                .privacy-notice {
-                    max-width: 100%;
-                    font-size: 0.85rem;
-                    color: #aaa;
-                    line-height: 1.6;
-                    margin-bottom: 15px;
-                }
+        .privacy-notice {
+          max-width: 100%;
+          font-size: 0.85rem;
+          color: #aaa;
+          line-height: 1.6;
+          margin-bottom: 15px;
+        }
 
-                .footer-bottom input,
-                .footer-bottom select {
-                    width: 100%;
-                    max-width: 400px;
-                }
+        .footer-bottom input,
+        .footer-bottom select {
+          width: 100%;
+          max-width: 400px;
+        }
 
-                 .join-section .btn-join {
+        .join-section .btn-join {
           padding: 8px 20px;
           font-size: 1rem;
           font-weight: 600;
@@ -497,43 +507,43 @@
           color: var(--accent);
           transform: translateY(-2px);
         }
-            </style>
-    </footer>
-    <script>
+      </style>
+  </footer>
+  <script>
 
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const dropdowns = document.querySelectorAll('.dropdown');
+    document.addEventListener('DOMContentLoaded', () => {
+      const dropdowns = document.querySelectorAll('.dropdown');
 
-            dropdowns.forEach(dropdown => {
-                const toggle = dropdown.querySelector('.dropdown-toggle');
-                const menu = dropdown.querySelector('.dropdown-menu');
+      dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        const menu = dropdown.querySelector('.dropdown-menu');
 
-                menu.style.display = 'none';
+        menu.style.display = 'none';
 
-                dropdown.addEventListener('mouseenter', () => {
-                    menu.style.display = 'block';
-                });
+        dropdown.addEventListener('mouseenter', () => {
+          menu.style.display = 'block';
+        });
 
-                dropdown.addEventListener('mouseleave', () => {
-                    menu.style.display = 'none';
-                });
+        dropdown.addEventListener('mouseleave', () => {
+          menu.style.display = 'none';
+        });
 
-                toggle.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const isVisible = menu.style.display === 'block';
-                    document.querySelectorAll('.dropdown-menu').forEach(m => m.style.display = 'none');
-                    if (!isVisible) menu.style.display = 'block';
-                });
-            });
+        toggle.addEventListener('click', (e) => {
+          e.preventDefault();
+          const isVisible = menu.style.display === 'block';
+          document.querySelectorAll('.dropdown-menu').forEach(m => m.style.display = 'none');
+          if (!isVisible) menu.style.display = 'block';
+        });
+      });
 
-            document.addEventListener('click', (e) => {
-                if (!e.target.closest('.dropdown')) {
-                    document.querySelectorAll('.dropdown-menu').forEach(menu => menu.style.display = 'none');
-                }
-            });
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+          document.querySelectorAll('.dropdown-menu').forEach(menu => menu.style.display = 'none');
+        }
+      });
 
-            document.getElementById('subscribeForm').addEventListener('submit', async (e) => {
+      document.getElementById('subscribeForm').addEventListener('submit', async (e) => {
         e.preventDefault();
 
         const form = e.target;
@@ -569,7 +579,7 @@
         }
       });
 
-            const searchBtn = document.querySelector('[title="Search"]');
+      const searchBtn = document.querySelector('[title="Search"]');
       const searchOverlay = document.getElementById('searchOverlay');
       const searchInput = document.getElementById('searchInput');
       const searchResults = document.getElementById('searchResults');
@@ -619,30 +629,30 @@
         { title: 'Cyber Security', url: 'cybersecurity.html', preview: 'Protecting digital assets and infrastructure from cyber threats.' },
         { title: 'Synthetic Biology', url: 'synthetic-biology.html', preview: 'Engineering biological systems for novel applications.' },
         { title: 'Advanced Materials', url: 'advanced-material.html', preview: 'Developing new materials with enhanced properties and capabilities.' },
-        
+
         // Applications
         { title: 'Semiconductors', url: 'semiconductor.html', preview: 'Advancing semiconductor technology for next-generation electronics.' },
         { title: 'AR & VR', url: 'arvr.html', preview: 'Augmented and Virtual Reality unlock immersive experiences that bridge the physical and digital.' },
         { title: 'Robotics', url: 'robotics.html', preview: 'Building intelligent robotic systems for various applications.' },
         { title: 'Autonomous Vehicles', url: 'autonomous-vehicle.html', preview: 'Developing self-driving technology for safer transportation.' },
         { title: 'IoT', url: 'iot.html', preview: 'Connecting devices and systems in the Internet of Things.' },
-        
+
         // About
         { title: 'SYSI', url: 'sysi.html', preview: 'SYSI Research Foundation is committed to exploring the frontiers of knowledge across cutting-edge domains.' },
         { title: 'FAQ', url: 'faq.html', preview: 'Frequently asked questions about SYSI Research Foundation.' },
         { title: 'Contact Us', url: 'contact.html', preview: 'Get in touch with SYSI Research Foundation.' },
         { title: 'News', url: 'news.html', preview: 'Latest updates and announcements from SYSI.' },
-        
+
         // Community
         { title: 'Community Events', url: 'community-events.html', preview: 'Join our community events and networking opportunities.' },
         { title: 'Calendar', url: 'calendar.html', preview: 'Upcoming events and important dates.' },
         { title: 'Videos', url: 'video.html', preview: 'Watch presentations and tutorials from SYSI.' },
         { title: 'Meeting Calendar', url: 'meeting-calendar.html', preview: 'Schedule of upcoming meetings and conferences.' },
-        
+
         // Members
         { title: 'Current Members', url: 'member.html', preview: 'Meet our community of researchers and innovators.' },
         { title: 'Join', url: 'join.html', preview: 'Become part of the SYSI Research Foundation community.' },
-        
+
         // Specifications
         { title: 'Under Development', url: 'under-development.html', preview: 'Current projects and initiatives in development.' },
         { title: 'Contribute', url: 'contribute.html', preview: 'Ways to contribute to SYSI Research Foundation.' }
@@ -679,44 +689,44 @@
         }
       });
       document.getElementById('navToggle')?.addEventListener('click', function () {
-  const navList = document.querySelector('.nav ul');
-  navList?.classList.toggle('active');
+        const navList = document.querySelector('.nav ul');
+        navList?.classList.toggle('active');
 
-  // Lock scroll when menu is active on mobile/tablet
-  if (navList?.classList.contains('active')) {
-    document.body.classList.add('no-scroll');
-  } else {
-    document.body.classList.remove('no-scroll');
-  }
-});
-
-const isMobile = window.innerWidth <= 1024;
-
-if (isMobile) {
-  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-    toggle.addEventListener('click', function (e) {
-      e.preventDefault();
-      const menu = this.nextElementSibling;
-
-      document.querySelectorAll('.dropdown-menu').forEach(m => {
-        if (m !== menu) m.style.display = 'none';
+        // Lock scroll when menu is active on mobile/tablet
+        if (navList?.classList.contains('active')) {
+          document.body.classList.add('no-scroll');
+        } else {
+          document.body.classList.remove('no-scroll');
+        }
       });
 
-      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-    });
-  });
+      const isMobile = window.innerWidth <= 1024;
 
-  document.addEventListener('click', function (e) {
-    if (!e.target.closest('.dropdown')) {
-      document.querySelectorAll('.dropdown-menu').forEach(menu => {
-        menu.style.display = 'none';
-      });
-    }
-  });
-}
+      if (isMobile) {
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+          toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            const menu = this.nextElementSibling;
+
+            document.querySelectorAll('.dropdown-menu').forEach(m => {
+              if (m !== menu) m.style.display = 'none';
+            });
+
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+              menu.style.display = 'none';
+            });
+          }
+        });
+      }
     });
-        
-    </script>
+
+  </script>
 </body>
 
 </html>
